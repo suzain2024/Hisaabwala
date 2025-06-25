@@ -4,13 +4,6 @@
 
 ---
 
-## 📸 Demo Preview
-
-![App Screenshot](https://via.placeholder.com/800x400?text=Add+your+demo+GIF+or+screenshot+here)
-
-> Replace this with your own screenshot or [Loom](https://loom.com) walkthrough later!
-
----
 
 ## 🚀 Features
 
