@@ -1,20 +1,43 @@
-# Hisaabwala 💰
+# 💰 Hisaabwala – MERN Stack Expense Tracker
 
-A full-stack expense tracker built using the MERN stack (MongoDB, Express, React, Node.js).
+**Hisaabwala** is a full-stack expense tracker built with the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to **add**, **view**, **edit**, and **delete** their financial transactions in a modern and responsive web app. Track your daily spending and get control of your budget with ease.
 
-## 📦 Features
-- Add, view, update, and delete transactions
-- Responsive React frontend
-- RESTful Express API
-- MongoDB database for storage
+---
 
-## 🚀 Run Locally
+## 📸 Demo Preview
 
-1. **Backend**
-   ```bash
-   cd backend
-   npm install
-   npm start
-   ##Project Description:
+![App Screenshot](https://via.placeholder.com/800x400?text=Add+your+demo+GIF+or+screenshot+here)
 
-The Expense Management System is a web-based application designed to assist users in tracking and managing their daily expenses. This system is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to create a scalable, responsive, and user-friendly application.
+> Replace this with your own screenshot or [Loom](https://loom.com) walkthrough later!
+
+---
+
+## 🚀 Features
+
+- 🔐 **Secure REST API** with Express and MongoDB
+- 💡 **CRUD Operations**: Add, view, edit, and delete transactions
+- 📅 Tracks transactions with **date, amount, title**
+- 📈 **Real-time UI updates** using React
+- 🔍 Clean and intuitive interface
+- 🌐 Fully responsive on desktop & mobile
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer      | Technology                         |
+|------------|-------------------------------------|
+| Frontend   | React, HTML5, CSS3, JavaScript      |
+| Backend    | Node.js, Express.js                 |
+| Database   | MongoDB Atlas                       |
+| Deployment | (Optional) Vercel, Render           |
+
+---
+
+## 🧑‍💻 Run Locally
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/suzain2024/Hisaabwala.git
+cd Hisaabwala
