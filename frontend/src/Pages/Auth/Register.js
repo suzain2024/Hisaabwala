@@ -8,7 +8,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import { Link, useNavigate } from "react-router-dom"; // Navigation and links
 import { ToastContainer, toast } from 'react-toastify'; // Toast notifications
 import 'react-toastify/dist/ReactToastify.css'; // Toast CSS
-import { registerAPI } from "../../utils/ApiRequest"; // API endpoint
+import { registerAPI } from "../../utils/ApiRequest.js"; // API endpoint
 import axios from "axios"; // Axios for HTTP requests
 
 // Register component
@@ -81,6 +81,7 @@ const Register = () => {
         email,
         password
       });
+      console.log("📦 API Response:", data);
 
       // If registration successful
       if (data.success === true) {
@@ -93,9 +94,22 @@ const Register = () => {
         toast.error(data.message, toastOptions);
       }
     } catch (err) {
-      // Generic error handler
-      toast.error("Something went wrong! Please try again.", toastOptions);
-    } finally {
+    console.error("🔥 Error from server:", err);
+
+    if (err.response) {
+      // The server responded with a 4xx or 5xx error
+      console.log("📦 Server said:", err.response.data);
+      toast.error(err.response.data.message || "Server Error!");
+    } else if (err.request) {
+      // No response received
+      console.log("⛔ No response received:", err.request);
+      toast.error("No response from server.");
+    } else {
+      // Something else went wrong
+      console.log("❌ Unexpected error:", err.message);
+      toast.error("Unexpected error occurred.");
+    }
+  }finally {
       // Stop loading in all cases
       setLoading(false);
     }
@@ -152,7 +166,7 @@ const Register = () => {
             <h1 className="text-center">
               <AccountBalanceWalletIcon sx={{ fontSize: 40, color: "white" }} className="text-center" />
             </h1>
-            <h1 className="text-center text-white">Welcome to Expense Management System</h1>
+            <h1 className="text-center text-white">Welcome to Hisaabwala</h1>
 
             {/* Registration form column */}
             <Col md={{ span: 6, offset: 3 }}>

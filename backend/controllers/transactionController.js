@@ -1,5 +1,5 @@
 //this is the backend which performs add,delete,update,get transaction for performing crud operations in the transaction
-import { addTransaction } from "../models/TransactionModel.js";
+import  transaction  from "../models/TransactionModel.js";
 import User from "../models/UserSchema.js";
 import moment from "moment";
 
@@ -180,7 +180,7 @@ export const updateTransactionController=async(req,res)=>{
                 await transactionElement.save();
                 return res.status(200).json({
                     success:true,
-                    message:`Transaction updated successfully`;
+                    message:`Transaction updated successfully`,
                 }); 
     }
     catch(err){

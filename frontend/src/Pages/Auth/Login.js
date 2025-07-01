@@ -12,7 +12,7 @@ import {Link,useNavigate} from "react-router-dom";//for navigation from one page
 import {ToastContainer,toast} from "react-toastify";//for displaying small popup messages
 import "react-toastify/dist/ReactToastify.css"; 
 import axios from "axios";//it is nothing but the js library used to handle http request line post,get,put,delete etc,it has simple syntax,automatic json file
-import {loginAPI} from "../../utils/ApiRequest";
+import {loginAPI} from "../../utils/ApiRequest.js";
    
 const Login=()=>{
   const navigate=useNavigate();
@@ -152,7 +152,7 @@ else{
               />
             </h1>
             <h2 className="text-white text-center ">Login</h2>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group controlId="formBasicEmail" className="mt-3">
                 <Form.Label className="text-white">Email address</Form.Label>
                 <Form.Control
@@ -191,7 +191,7 @@ else{
                 <Button
                   type="submit"
                   className=" text-center mt-3 btnStyle"
-                  onClick={!loading ? handleSubmit : null}
+                 
                   disabled={loading}
                 >
                   {loading ? "Signin…" : "Login"}

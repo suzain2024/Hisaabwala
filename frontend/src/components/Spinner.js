@@ -1,6 +1,6 @@
 //this component is basically loading animation which indicates user something is in progress i.e something is running in background
 import React from 'react'
-import logo from "../src/assets/loader.gif"
+import logo from "../assets/loader.gif"
 import {Container} from 'react-bootstrap'
 const Spinner=()=>{
  return (

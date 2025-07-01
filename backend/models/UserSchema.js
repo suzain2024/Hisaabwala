@@ -4,7 +4,7 @@ import validator from "validator";//checks whether user enters valid detail if n
 import jwt from "jsonwebtoken";//for securely authentication of user i.e ask the client to save the detail in local storage or cookies & when needed then generates 
 import bcrypt from "bcrypt";
 import { type } from "os";
-import Transaction from "./TransactionModel";
+import Transaction from "./TransactionModel.js";
 
 const userSchema=new mongoose.Schema({
     name:{

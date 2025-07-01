@@ -15,14 +15,14 @@ import {setAvatarAPI} from "../../utils/ApiRequest.js";//points to backend to se
 import Particles from "react-tsparticles";//for animations
 import {loadFull} from "tsparticles";//loads plugins and feature
 
-const {
+import {
     uniqueNamesGenerator,
     colors,
     animals,
     countries,
     names,
     languages,
-}=require("unique-names-generator");//this creates unique funny name instead of ids 
+} from "unique-names-generator";//this creates unique funny name instead of ids 
  const sprites=[
 
     "adventurer", //all this are the characters 
@@ -121,6 +121,7 @@ const setProfilePicture=async()=>{
         }
     }
 };
+
 // 
 const particlesInit=useCallback(async (engine)=>{
 
