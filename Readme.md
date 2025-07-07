@@ -1,6 +1,6 @@
-# 💰 Hisaabwala – MERN Stack Expense Tracker
+# 💰 Expense Management System– MERN Stack Expense Tracker
 
-**Hisaabwala** is a full-stack expense tracker built with the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to **add**, **view**, **edit**, and **delete** their financial transactions in a modern and responsive web app. Track your daily spending and get control of your budget with ease.
+**– MERN Stack Expense Tracker** is a full-stack expense tracker built with the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to **add**, **view**, **edit**, and **delete** their financial transactions in a modern and responsive web app. Track your daily spending and get control of your budget with ease.
 
 ---
 
