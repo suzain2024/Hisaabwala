@@ -27,7 +27,6 @@
 
 ---
 
-## 🧑‍💻 Live Website(Reference)-[https://main.d1sj7cd70hlter.amplifyapp.com/](https://expense-tracker-app-three-beryl.vercel.app/)
 
 ### 1️⃣ Clone the Repository
 
